@@ -1,3 +1,7 @@
+:root {
+  --plava: #126578;
+}
+
 h1 {
-  background-color: antiquewhite;
+  background-color: var(--plava);
 }
