@@ -1,0 +1,9 @@
+.footer-container {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-ime {
+  color: white;
+}
