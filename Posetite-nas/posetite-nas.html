@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Posetite nas</title>
+    <link rel="stylesheet" href="./posetite-nas.css" />
+  </head>
+  <body>
+    <form class="rezervacija">
+      <label for="paket">Izaberite paket:</label> <br />
+      <input type="radio" name="paket" id="paket" value="Obilazak Standard" />
+      <span>Obilazak Standard</span>
+      <br />
+      <input type="radio" name="paket" id="paket" value="Obilazak Premium" />
+      <span>Obilazak Premium</span> <br />
+      <input type="radio" name="paket" id="paket" value="Obilazak Lux" />
+      <span>Obilazak Lux</span>
+      <br />
+      <label for="imeIPrezime">Ime i prezime:</label>
+      <input type="text" name="imeIPrezime" id="imeIPrezime" required /> <br />
+      <label for="telefon">Broj telefona:</label>
+      <input
+        type="tel"
+        id="telefon"
+        name="telefon"
+        pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+        required
+      />
+      <br />
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" required /> <br />
+      <label for="brOsoba" title="Maksimalan broj osoba je 20!"
+        >Broj osoba:</label
+      >
+      <input
+        type="number"
+        id="brOsoba"
+        name="brOsoba"
+        min="1"
+        max="20"
+        required
+      />
+      <br />
+      <label for="datum">Datum:</label>
+      <input type="date" name="datum" id="datum" required /> <br />
+      <input type="submit" value="Rezerviši" />
+    </form>
+  </body>
+</html>

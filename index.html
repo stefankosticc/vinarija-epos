@@ -3,23 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vinarija Joksimović</title>
+    <link rel="icon" href="/Logo/logo.png" />
+
     <script src="./Footer/footer.js"></script>
     <link rel="stylesheet" href="./Footer/footer.css" />
+    <script src="./Meni/meni.js"></script>
+    <link rel="stylesheet" href="./Meni/meni.css" />
   </head>
   <body>
-    <h1>Vinarija</h1>
-    <header>
-      <nav>
-        <ul>
-          <li>Pocetna</li>
-          <li>Ponuda</li>
-          <li>Vinarija</li>
-          <li>O nama</li>
-          <li>Kontakt</li>
-        </ul>
-      </nav>
-    </header>
+    <script>
+      const m = createMeni();
+      document.body.appendChild(m);
+    </script>
+    <a href="/Posetite-nas/posetite-nas.html">Ponuda</a>
     <script>
       const footer = createFooter();
       document.body.appendChild(footer);
