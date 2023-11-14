@@ -4,47 +4,174 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Posetite nas</title>
-    <link rel="stylesheet" href="./posetite-nas.css" />
+    <link rel="stylesheet" href="./style/posetite-nas.css" />
   </head>
   <body>
-    <form class="rezervacija">
-      <label for="paket">Izaberite paket:</label> <br />
-      <input type="radio" name="paket" id="paket" value="Obilazak Standard" />
-      <span>Obilazak Standard</span>
-      <br />
-      <input type="radio" name="paket" id="paket" value="Obilazak Premium" />
-      <span>Obilazak Premium</span> <br />
-      <input type="radio" name="paket" id="paket" value="Obilazak Lux" />
-      <span>Obilazak Lux</span>
-      <br />
-      <label for="imeIPrezime">Ime i prezime:</label>
-      <input type="text" name="imeIPrezime" id="imeIPrezime" required /> <br />
-      <label for="telefon">Broj telefona:</label>
-      <input
-        type="tel"
-        id="telefon"
-        name="telefon"
-        pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
-        required
-      />
-      <br />
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" name="email" required /> <br />
-      <label for="brOsoba" title="Maksimalan broj osoba je 20!"
-        >Broj osoba:</label
-      >
-      <input
-        type="number"
-        id="brOsoba"
-        name="brOsoba"
-        min="1"
-        max="20"
-        required
-      />
-      <br />
-      <label for="datum">Datum:</label>
-      <input type="date" name="datum" id="datum" required /> <br />
-      <input type="submit" value="Rezerviši" />
-    </form>
+    <main class="posetite-nas">
+      <p>
+        Kapije Vinarije Joksimović širom su otvorene za sve posetioce i
+        ljubitelje koji žele da dožive čari nastanka vina i u prelepom ambijentu
+        uživaju u degustaciji vina. Zakoračite u svet vina i zajedno sa nama
+        krenite na putovanje ka mestu gde se vino I muzika nadovezuju,
+        otkrivajući novu dimenziju i lepotu života.
+      </p>
+      <ol class="paketi">
+        <li>
+          <h3>Obilazak STANDARD</h3>
+          <p>
+            <i
+              >Pršuta od mangulice, slanina od mangulice, pečenica od mangulice,
+              polutvrdi zreli koziji sir, pašteta od čvaraka, sir Grana Padano,
+              polutvrdi punomasni kravlji sir - „Ambasador“, pareni rolovani
+              kravlji sir, zelene masline, orasi, badem, lešnik, domaći džem od
+              kajsija, sveže grožđe, hlebni štapići</i
+            >
+            <br />
+            Ponuda obuhvata obilazak Vinarije sa degustacijom 3 vina i
+            posluženje navedenog menija. Ponuda je u trajanju od 2 sata.
+            <br />
+            <b>Cena: 1140 rsd po osobi.</b>
+          </p>
+          <img class="slika" src="./image/standard.jpg" alt="standard paket" />
+        </li>
+        <li>
+          <h3>Obilazak Premium</h3>
+          <p>
+            <i
+              >Pršuta od mangulice, slanina od mangulice, pečenica od mangulice,
+              čvarci od mangulice, polutvrdi punomasni kravlji sir -
+              „Ambasador“, polutvrdi zreli koziji sir, pareni rolovani kravlji
+              sir, zelene masline, badem, domaći džem od kajsija, krostini,
+              pašteta od morke, šargarepa, sveže grožđe, miks sezonskog voća,
+              sveža paprika, kapar, baget.</i
+            >
+            <br />
+            Ponuda obuhvata obilazak Vinarije sa degustacijom 4 vina, posluženje
+            navedenog menija i posluženje vina za vreme ručka. Ponuda je u
+            trajanju od 3 sata.
+            <br />
+            <b>Cena: 6780 rsd po osobi.</b>
+          </p>
+          <img class="slika" src="./image/premiumjpg.jpg" alt="premium paket" />
+        </li>
+        <li>
+          <h3>Obilazak LUX</h3>
+          <p>
+            <i
+              >Filet steak, biftek gratiniran sa džemom od ljubičastog luka,
+              juneća tagliata. Tuna steak, lignje na žaru. Grilovano povrće,
+              krompir sa puterom i začinskim biljem, marinada. Baby spinach
+              salata sa cherry paradajzom.</i
+            >
+            <br />
+            Ponuda obuhvata obilazak Vinarije sa degustacijom 6 vina, posluženje
+            navedenog menija i posluženje rakije u vidu aperitiva i vina za
+            vreme ručka. U trajanju je od 3 sata.
+            <br />
+            <b>Cena LUX paketa je 14300 rsd po osobi.</b>
+          </p>
+          <img class="slika" src="./image/lux.jpg" alt="lux paket" />
+        </li>
+      </ol>
+
+      <form class="rezervacija">
+        <div id="izbor-paketa">
+          <label for="paket">Izaberite zeljeni paket:</label>
+          <br />
+          <input
+            type="radio"
+            name="paket"
+            id="paket1"
+            value="Obilazak Standard"
+            checked
+          />
+          <span>Obilazak Standard</span><br />
+          <input
+            type="radio"
+            name="paket"
+            id="paket2"
+            value="Obilazak Premium"
+          />
+          <span>Obilazak Premium</span><br />
+          <input type="radio" name="paket" id="paket3" value="Obilazak Lux" />
+          <span>Obilazak Lux</span><br />
+        </div>
+
+        <div class="polje polje-obavezno">
+          <label for="imeIPrezime">Ime i prezime:</label>
+          <input
+            type="text"
+            name="imeIPrezime"
+            id="imeIPrezime"
+            size="35"
+            maxlength="30"
+            required
+          />
+        </div>
+
+        <div class="polje polje-obavezno">
+          <label for="telefon">Broj telefona:</label>
+          <input
+            type="tel"
+            id="telefon"
+            name="telefon"
+            size="35"
+            pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+            required
+          />
+        </div>
+
+        <div class="polje">
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" size="35" /> <br />
+        </div>
+
+        <div class="polje polje-obavezno">
+          <label for="brOsoba" title="Maksimalan broj osoba je 20!"
+            >Broj osoba:</label
+          >
+          <input
+            type="number"
+            id="brOsoba"
+            name="brOsoba"
+            min="1"
+            max="20"
+            required
+          />
+        </div>
+
+        <div class="polje polje-obavezno">
+          <label for="datum">Datum:</label>
+          <input type="date" name="datum" id="datum" required /> <br />
+        </div>
+
+        <div class="polje polje-obavezno">
+          <span>Izaberi nacin placanja:</span>
+          <select name="placanje" id="placanje">
+            <option value="kes">Kes</option>
+            <optgroup label="Kartica">
+              <option value="visa">Visa</option>
+              <option value="master" selected>Master</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="polje">
+          <p>Komentar:</p>
+          <textarea
+            name="komentar"
+            id="komentar"
+            cols="35"
+            rows="7"
+            placeholder="Dodaj komentar..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="rezervisi" id="submit">Rezerviši</button>
+        <button type="reset" id="Resetuj">Resetuj</button>
+        <!--
+        ili <input type="submit" value="Rezerviši" />
+      --></form>
+    </main>
   </body>
 </html>

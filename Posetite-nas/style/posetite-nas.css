@@ -1,0 +1,42 @@
+@import url("../../boje.css");
+
+.posetite-nas {
+  background-color: var(--bela);
+}
+.slika {
+  width: 60%;
+  height: 1%;
+  margin-left: 20%;
+}
+.rezervacija {
+  background-color: var(--crvena);
+  border: 3px solid var(--crvena);
+  border-radius: 20px;
+  padding: 20px;
+  width: 30%;
+  margin-left: 35%;
+}
+.polje {
+  margin: 15px;
+}
+
+.polje label {
+  display: block;
+}
+
+.polje input {
+  display: block;
+  width: 100%;
+}
+
+.polje p {
+  display: block;
+}
+.polje textarea {
+  display: block;
+}
+
+.rezervisi {
+  margin: 15px;
+  font-size: 120%;
+}
