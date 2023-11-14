@@ -8,31 +8,49 @@ main {
 .vino-container {
   display: flex;
   justify-content: center;
-  width: 25%;
   height: 100vh;
-  cursor: pointer;
+  flex-grow: 1;
 }
 
 .zdrepceva {
-  background-color: brown;
+  background-color: var(--svetlo-crvena);
 }
 
 .kupinovo {
-  background-color: purple;
+  background-color: var(--zuta);
 }
 
 .lederer {
-  background-color: green;
+  background-color: var(--svetlo-zelena);
 }
 
 .osam-tamburasa {
-  background-color: blue;
+  background-color: var(--plava);
 }
 
 .vino-container img {
   cursor: pointer;
+  object-fit: contain;
+  width: 20vw;
+  z-index: 1;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .vino-opis {
   display: none;
+  color: white;
+  width: 30%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.naziv-vina {
+  font-size: 3vw;
+  margin-bottom: 1rem;
+}
+
+.vino-opis p {
+  font-size: 1vw;
 }
