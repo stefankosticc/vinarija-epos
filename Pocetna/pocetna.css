@@ -2,15 +2,21 @@
 
 .header {
   position: fixed;
-  height: 20%;
+  /*flex-direction: row;
+  justify-content: center;*/
+  height: 215px;
   padding: 0px;
+}
+#logoHeader {
+  height: 12vw;
+  width: 12vw;
 }
 body {
   background-color: white;
 }
 
 main {
-  margin-top: 150px;
+  margin-top: 210px;
   margin-bottom: 75px;
   display: flex;
   justify-content: left;
@@ -39,5 +45,6 @@ main {
 .o-nama {
   height: 70%;
   flex-direction: column;
+  /*justify-content: center;*/
   margin-top: 5%;
 }
