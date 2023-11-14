@@ -51,6 +51,10 @@ main {
   margin-bottom: 1rem;
 }
 
+.vino-opis h3 {
+  font-size: 1.2vw;
+}
+
 .vino-opis p {
   font-size: 1vw;
 }
