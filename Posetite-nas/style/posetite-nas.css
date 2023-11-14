@@ -1,9 +1,14 @@
 @import url("../../boje.css");
 
 
-
+.header{
+  position: static;
+}
 .posetite-nas {
-  background-color: var(--bela);
+  padding-top: 5%;
+  background-color: var(--zuta);
+  padding-bottom: 5%;
+ 
 }
 .slika {
   width: 60%;
@@ -11,12 +16,13 @@
   margin-left: 20%;
 }
 .rezervacija {
-  background-color: var(--svetlo-crvena);
+  background-color: var(--svetlo-zelena);
   border: 3px solid var(--svetlo-crvena);
   border-radius: 20px;
   padding: 20px;
   width: 30%;
   margin-left: 35%;
+  
 }
 .polje {
   margin: 15px;
@@ -38,11 +44,3 @@
   display: block;
 }
 
-.rezervisi {
-  margin: 15px;
-  font-size: 120%;
-}
-#resetuj {
-  margin: 15px;
-  font-size: 120%;
-}
