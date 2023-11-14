@@ -1,9 +1,34 @@
-.footer-container {
-  background-color: red;
+.footer{
+  background-color: #004225;
   display: flex;
   justify-content: center;
+  text-align: center;
+  width: 100%;   
+  padding: 20px;
+  margin-bottom: 0;
 }
 
-.footer-ime {
-  color: white;
+#logo{
+  width: 10%;
+  height: auto;
+  margin-top: 10pt;
+  width: 150pt;
 }
+#naziv{
+  margin-top: 0;
+  margin-bottom: 0.5cm;
+}
+
+#adresa{
+  margin-bottom: 0.5cm;
+}
+#telefon{
+  margin-bottom: 0.5cm;
+}
+#email{
+  margin-bottom: 0.5cm;
+}
+#pratiteNas{
+  margin-bottom: 0.2cm;
+}
+
