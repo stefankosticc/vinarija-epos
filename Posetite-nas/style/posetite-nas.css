@@ -9,8 +9,8 @@
   margin-left: 20%;
 }
 .rezervacija {
-  background-color: var(--crvena);
-  border: 3px solid var(--crvena);
+  background-color: var(--svetlo-crvena);
+  border: 3px solid var(--svetlo-crvena);
   border-radius: 20px;
   padding: 20px;
   width: 30%;
@@ -37,6 +37,10 @@
 }
 
 .rezervisi {
+  margin: 15px;
+  font-size: 120%;
+}
+#resetuj {
   margin: 15px;
   font-size: 120%;
 }

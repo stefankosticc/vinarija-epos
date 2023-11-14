@@ -1,0 +1,12 @@
+.polje input:focus {
+  background-color: var(--svetlo-zelena);
+}
+
+.rezervisi:hover {
+  cursor: pointer;
+  /* dodati sta ce se desiti kada se predje preko dugmeta*/
+}
+.polje-obavezno label::after {
+  content: "*";
+  color: red;
+}
