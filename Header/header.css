@@ -1,46 +1,46 @@
-body{
-    background-color: white;
+body {
+  background-color: white;
 }
 
-.header{
-    background-color: #004225;
-    color: black;
-    justify-content: center;
-    text-align: center;
-    top: 0;
-    width: 100%;
-    right: 0;
-    position: fixed;
-      /*flex-direction: row;
+.header {
+  background-color: #004225;
+  color: black;
+  justify-content: center;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  right: 0;
+  position: fixed;
+  /*flex-direction: row;
   justify-content: center;*/
-    height: 15vw;
-    padding: 0px;
+  height: 15vw;
+  padding: 0px;
 }
-#logoHeader{
-    position: relative;
-    bottom: 0;
+
+#logoHeader {
+  position: relative;
+  bottom: 0;
   height: 12vw;
   width: 12vw;
-} 
+}
 
-.meni{
-    text-align: center;
-    margin: 0 20pt;
+.meni {
+  text-align: center;
+  margin: 0 20pt;
 }
-#pocetna{
-    display: inline-block;
-    margin: 0 20pt;
+#pocetna {
+  display: inline-block;
+  margin: 0 20pt;
 }
-#ponuda{
-    display: inline-block;
-    margin: 0 20pt;
-    
+#ponuda {
+  display: inline-block;
+  margin: 0 20pt;
 }
-#posetite-nas{
-    display: inline-block;
-    margin: 0 20pt;
+#posetite-nas {
+  display: inline-block;
+  margin: 0 20pt;
 }
-#kontakt{
-    display: inline-block;
-    margin: 0 20pt;
+#kontakt {
+  display: inline-block;
+  margin: 0 20pt;
 }

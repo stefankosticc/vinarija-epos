@@ -1,33 +1,32 @@
-.footer{
+.footer {
   background-color: #004225;
   display: flex;
   justify-content: center;
   text-align: center;
-  width: 100%;   
+  width: 100%;
   margin-bottom: 0;
+  color: white;
 }
 
-#logo{
+#logo {
   height: 12vw;
   width: 12vw;
   margin-top: 10pt;
-  
 }
-#naziv{
+#naziv {
   margin-top: 0;
   margin-bottom: 0.5cm;
 }
 
-#adresa{
+#adresa {
   margin-bottom: 0.5cm;
 }
-#telefon{
+#telefon {
   margin-bottom: 0.5cm;
 }
-#email{
+#email {
   margin-bottom: 0.5cm;
 }
-#pratiteNas{
+#pratiteNas {
   margin-bottom: 0.2cm;
 }
-
