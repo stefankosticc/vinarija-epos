@@ -1,31 +1,16 @@
 @import url("../boje.css");
 
-.header {
-  position: fixed;
-  /*flex-direction: row;
-  justify-content: center;*/
-  height: 215px;
-  padding: 0px;
-}
-#logoHeader {
-  height: 12vw;
-  width: 12vw;
-}
-body {
-  background-color: white;
-}
-
 main {
-  margin-top: 210px;
-  margin-bottom: 75px;
+  width: 100%;
+  background-color: var(--zuta);
+  margin-top: 15vw;
   display: flex;
   justify-content: left;
-  flex-direction: column;
+  flex-direction: column; 
 }
-.slike1 {
+.slike {
   width: 100%;
-  height: 60%;
-  margin-top: 30px;
+  margin-top: 2vw;
   display: flex;
   justify-content: center;
 }
@@ -37,14 +22,44 @@ main {
 }
 
 #slika2 {
+  
   justify-content: left;
   height: 40%;
   width: 30%;
   padding-right: 1cm;
+  
 }
 .o-nama {
+  background-color: var(--zuta);
   height: 70%;
+  width: 100%;
   flex-direction: column;
-  /*justify-content: center;*/
   margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.slike2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center;
+  
+}
+#slika3{
+  width: 40%;
+ height: 40%;
+ align-self: flex-start;
+ padding: 2vw;
+
+}
+#slika4{
+  width: 40%;
+  height: 40%;
+  padding: 2vw;
+  align-items: flex-end;
+}
+#slika5 {
+  width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
