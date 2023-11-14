@@ -1,37 +1,35 @@
-body{
-    background-color: white;
-}
-main{
-    height: 100%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-}
-.slike1{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    
-    
+@import url("../boje.css");
 
+body {
+  background-color: white;
 }
-#slika1{
-    height: 100%;
-    width: 60%;
-    justify-content: right;
-    order: 2;
+main {
+  height: 100%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
+}
+.slike1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#slika1 {
+  height: 100%;
+  width: 60%;
+  justify-content: right;
+  order: 2;
 }
 
-#slika2{
-    justify-content: left;
-    height: 40%;
-    width: 30%;
-    padding-right: 1cm;
+#slika2 {
+  justify-content: left;
+  height: 40%;
+  width: 30%;
+  padding-right: 1cm;
 }
-.o-nama{
-   
-    flex-direction: column;
-    margin-top: 5%;
+.o-nama {
+  flex-direction: column;
+  margin-top: 5%;
 }
