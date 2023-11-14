@@ -1,12 +1,16 @@
-document.addEventListener("click", function () {
-  let vino = event.target;
-  let opis = vino.querySelector(".vino-opis");
-  var stil = window.getComputedStyle(opis);
-  let displayValue = stil.getPropertyValue("display");
+var otvorenOpis = null;
 
-  if (displayValue == "none") {
-    opis.style.display = "block";
-  } else {
-    opis.style.display = "none";
+function detaljanOpis(vino) {
+  var opis = vino.querySelector(".vino-opis");
+
+  if (otvorenOpis !== null && otvorenOpis !== vino) {
+    otvorenOpis.querySelector(".vino-opis").style.display = "none";
   }
-});
+
+  opis.style.display = opis.style.display === "none" ? "flex" : "none";
+  vino.style.flexGrow = opis.style.display === "none" ? "1" : "2";
+  opis.style.justifyContent = "center";
+  opis.style.flexDirection = "column";
+
+  otvorenOpis = opis.style.display === "none" ? null : vino;
+}
