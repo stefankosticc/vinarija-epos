@@ -50,13 +50,15 @@ body {
 
 .informacije-container {
   background-color: var(--zelena);
-  width: 75%;
+  width: 71%;
   color: var(--bela);
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-top: 2rem;
   height: 40vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .polje {
@@ -85,7 +87,46 @@ iframe {
 }
 
 @media screen and (max-width: 900px) {
+  .uvod {
+    font-size: 2.5vw;
+  }
+
+  .mapa p {
+    font-size: 2.5vw;
+  }
+
+  .informacije-container {
+    width: 75vw;
+  }
+
+  iframe {
+    width: 75vw;
+    height: 60vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 455px) {
+  .uvod {
+    font-size: 4.5vw;
+  }
+
+  .mapa p {
+    font-size: 4vw;
+  }
+
+  .informacije-container {
+    flex-direction: column;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .fas {
+    margin-bottom: 1rem;
+  }
 }
