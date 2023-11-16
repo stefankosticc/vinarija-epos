@@ -3,6 +3,7 @@
 body {
   background-color: var(--zuta);
   position: relative;
+  margin-bottom: 5rem;
 }
 
 .header {
@@ -43,16 +44,45 @@ body {
 }
 
 .uvod {
+  width: 75%;
   font-weight: bold;
   font-size: 1.2vw;
+  text-align: center;
 }
 
 .informacije-container {
   background-color: var(--zelena);
-  width: 84%;
+  width: 75%;
   color: var(--bela);
   display: flex;
   justify-content: space-around;
   text-align: center;
   margin-top: 2rem;
+  height: 40vh;
+}
+
+.polje {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fas {
+  margin-bottom: 2.5rem;
+}
+
+.mapa {
+  margin-top: 3rem;
+}
+
+.mapa p {
+  font-weight: bold;
+  font-size: 1vw;
+}
+
+iframe {
+  border-width: 1rem;
+  border-color: var(--zelena);
+  border-style: solid;
 }
