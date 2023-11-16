@@ -1,5 +1,9 @@
 @import url("../../boje.css");
 
+.header a:hover {
+  color: var(--zuta);
+}
+
 main {
   width: 100%;
   display: flex;

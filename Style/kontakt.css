@@ -20,14 +20,12 @@ body {
   position: sticky;
   height: 10vw;
 }
-
 .header a {
   text-decoration: none;
   color: var(--bela);
 }
-
 .header a:hover {
-  color: var(--zelena);
+  color: var(--zuta);
 }
 
 #logoSlova {
