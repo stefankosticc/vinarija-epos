@@ -3,9 +3,12 @@
 main {
   width: 100%;
   display: flex;
-  margin-top: 15vw;
+  
 }
 
+header{
+  position: static;
+}
 .vino-container {
   display: flex;
   justify-content: center;
