@@ -51,7 +51,15 @@ main {
   height: 40%;
   align-items: flex-end;
 }
+
 #slika5 {
   width: 100vw;
   margin-top: 2%;
+}
+
+@media screen and (max-width: 455px) {
+  #slika3,
+  #slika4 {
+    width: 48vw;
+  }
 }

@@ -85,3 +85,9 @@ iframe {
   border-color: var(--zelena);
   border-style: solid;
 }
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 455px) {
+}

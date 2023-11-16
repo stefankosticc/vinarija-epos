@@ -18,8 +18,9 @@
 
 .slika {
   width: 60%;
-  height: 1%;
   margin-left: 20%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .rezervacija-container {
@@ -70,4 +71,31 @@
 .dugme:hover {
   cursor: pointer;
   transform: scale(1.5, 1.5);
+}
+
+@media screen and (max-width: 900px) {
+  .rezervacija {
+    width: 50%;
+  }
+
+  .forma-red {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .polje textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  .rezervacija {
+    width: 90%;
+  }
+
+  .slika {
+    width: 100%;
+    margin-left: 0;
+  }
 }
