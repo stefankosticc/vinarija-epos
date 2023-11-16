@@ -1,0 +1,25 @@
+@import url("../boje.css");
+
+body {
+  position: relative;
+}
+
+.header {
+  display: flex;
+  /* horiznotalno */
+  justify-content: space-evenly;
+  /* vertikalno */
+  align-items: center;
+  background-color: var(--zelena);
+  color: var(--bela);
+  width: 100%;
+  top: 0;
+  position: sticky;
+  height: 10vw;
+}
+
+#logoHeader {
+  position: relative;
+  height: 10vw;
+  width: 10vw;
+}

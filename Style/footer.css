@@ -1,0 +1,32 @@
+@import url("../boje.css");
+
+.footer {
+  background-color: var(--zelena);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  color: var(--bela);
+  padding-bottom: 1rem;
+}
+
+#logo {
+  height: 12vw;
+  width: 12vw;
+}
+#naziv {
+  margin-bottom: 1rem;
+}
+
+#adresa {
+  margin-bottom: 1rem;
+}
+#telefon {
+  margin-bottom: 1rem;
+}
+#email {
+  margin-bottom: 1rem;
+}
+#pratiteNas {
+  margin-bottom: 1rem;
+}

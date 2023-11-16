@@ -1,6 +1,6 @@
 :root {
   --zelena: #004225;
-  --bela: #f5f5dc;
+  --bela: white;
   --crvena: #fa7070;
   --svetlo-crvena: #f53d3d;
   --svetlo-zelena: #339989;
@@ -10,4 +10,5 @@
 
 * {
   margin: 0;
+  font-family: "Noto Serif", serif;
 }
