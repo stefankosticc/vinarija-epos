@@ -1,54 +1,44 @@
-@import url("/boje.css");
+@import url("./boje.css");
 
-.header{
-    position: static;
-    background-image: url('/Kontakt/image/vino3.jpeg');
-    background-size: cover;
-    background-position: center;
-    
-    /* padding: 20px; */
-    /* height: 100vw; */
-  }
-#logoSlova{
-    position: relative;
-    bottom: 0;
-  height: 12vw;
-  width: 12vw;
-}
-body{
-    display: flex;
-}
-.main-container{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-margin-top: 20%; 
-background-color: var(--zuta);
- 
-}
-.main-container p{
- align-self: center;
- text-align: center;
-  font-size: medium;
-  text-transform: uppercase;
-
-}
-.centar{
-    /* display: flex;
-    justify-content: center;
-    flex-direction: row; */
-    box-sizing: border-box;
-    justify-content: center;
-    padding: 5%;
-}
-.centar polje{
-   
-   box-sizing: content-box;
-    
-}
-#ikonica1{
-    order: 1;
-  
+body {
+  background-color: var(--zuta);
+  position: relative;
 }
 
+.header {
+  background-image: url("../Slike/vino3.jpeg");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--zelena);
+  color: var(--bela);
+  width: 100%;
+  top: 0;
+  position: sticky;
+  height: 10vw;
+}
+
+#logoSlova {
+  height: 10vw;
+  width: 10vw;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.uvod {
+  font-weight: bold;
+  font-size: 1.2vw;
+}
+
+.informacije-container {
+  background-color: aqua;
+}
