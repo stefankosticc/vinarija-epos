@@ -3,10 +3,9 @@
 main {
   width: 100%;
   display: flex;
-  
 }
 
-header{
+header {
   position: static;
 }
 .vino-container {
@@ -51,14 +50,66 @@ header{
 }
 
 .naziv-vina {
-  font-size: 3vw;
+  font-size: 2vw;
   margin-bottom: 1rem;
 }
 
 .vino-opis h3 {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 .vino-opis p {
-  font-size: 1vw;
+  font-size: 0.9vw;
+}
+
+@media screen and (max-width: 900px) {
+  main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .vino-container {
+    height: 100%;
+  }
+
+  .naziv-vina {
+    font-size: 3vw;
+  }
+
+  .vino-opis h3 {
+    font-size: 2.4vw;
+  }
+
+  .vino-opis p {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 455px) {
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .vino-container img {
+    box-shadow: none;
+  }
+
+  .vino-opis {
+    width: 55%;
+    justify-content: space-around;
+  }
+
+  .naziv-vina {
+    font-size: 5vw;
+  }
+
+  .vino-opis h3 {
+    font-size: 3.5vw;
+  }
+
+  .vino-opis p {
+    font-size: 2.5vw;
+  }
 }

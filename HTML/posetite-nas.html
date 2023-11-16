@@ -65,7 +65,6 @@
           <br />
           <img class="slika" src="../Slike/standard.jpg" alt="standard paket" />
         </li>
-        <br />
         <li>
           <h3>Obilazak Premium</h3>
           <p>
@@ -84,10 +83,8 @@
             <br /><br />
             <b>Cena: 6780 rsd po osobi.</b>
           </p>
-          <br />
           <img class="slika" src="../Slike/premium.jpg" alt="premium paket" />
         </li>
-        <br />
         <li>
           <h3>Obilazak LUX</h3>
           <p>
@@ -108,103 +105,109 @@
         </li>
       </ol>
 
-      <br /><br /><br />
-      <form action="" class="rezervacija">
-        <div id="izbor-paketa">
-          <label for="paket">Izaberite željeni paket:</label>
-          <br />
-          <input
-            type="radio"
-            name="paket"
-            id="paket1"
-            value="Obilazak Standard"
-            checked
-          />
-          <span>Obilazak Standard</span><br />
-          <input
-            type="radio"
-            name="paket"
-            id="paket2"
-            value="Obilazak Premium"
-          />
-          <span>Obilazak Premium</span><br />
-          <input type="radio" name="paket" id="paket3" value="Obilazak Lux" />
-          <span>Obilazak Lux</span><br />
-        </div>
+      <div class="rezervacija-container">
+        <form action="" class="rezervacija">
+          <div id="izbor-paketa">
+            <label for="paket">Izaberite željeni paket:</label><br />
+            <input
+              type="radio"
+              name="paket"
+              id="paket1"
+              value="Obilazak Standard"
+              checked
+            />
+            <span>Obilazak Standard</span><br />
+            <input
+              type="radio"
+              name="paket"
+              id="paket2"
+              value="Obilazak Premium"
+            />
+            <span>Obilazak Premium</span><br />
+            <input type="radio" name="paket" id="paket3" value="Obilazak Lux" />
+            <span>Obilazak Lux</span><br />
+          </div>
 
-        <div class="polje polje-obavezno">
-          <label for="imeIPrezime">Ime i prezime:</label>
-          <input
-            type="text"
-            name="imeIPrezime"
-            id="imeIPrezime"
-            size="35"
-            maxlength="30"
-            required
-          />
-        </div>
+          <div class="polje polje-obavezno">
+            <label for="imeIPrezime">Ime i prezime:</label>
+            <input
+              type="text"
+              name="imeIPrezime"
+              id="imeIPrezime"
+              size="35"
+              maxlength="30"
+              required
+            />
+          </div>
 
-        <div class="polje polje-obavezno ograniceno">
-          <label for="telefon">Broj telefona:</label>
-          <input
-            type="tel"
-            id="telefon"
-            name="telefon"
-            size="35"
-            pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
-            required
-          />
-        </div>
+          <div class="polje polje-obavezno">
+            <label
+              for="telefon"
+              title="Broj telefona mora biti u formatu 06X-XXXX-XXX!"
+              >Broj telefona:</label
+            >
+            <input
+              type="tel"
+              id="telefon"
+              name="telefon"
+              size="35"
+              pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
+              required
+            />
+          </div>
 
-        <div class="polje ograniceno">
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" size="35" /> <br />
-        </div>
+          <div class="polje ograniceno">
+            <label for="email" title="E-mail mora sadržati @!">E-mail:</label>
+            <input type="email" id="email" name="email" size="35" /> <br />
+          </div>
 
-        <div class="polje polje-obavezno ograniceno">
-          <label for="brOsoba" title="Maksimalan broj osoba je 20!"
-            >Broj osoba:</label
-          >
-          <input
-            type="number"
-            id="brOsoba"
-            name="brOsoba"
-            min="1"
-            max="20"
-            required
-          />
-        </div>
+          <div class="forma-red">
+            <div class="polje polje-obavezno ograniceno">
+              <label for="brOsoba" title="Maksimalan broj osoba je 20!"
+                >Broj osoba:</label
+              >
+              <input
+                type="number"
+                id="brOsoba"
+                name="brOsoba"
+                min="1"
+                max="20"
+                required
+              />
+            </div>
 
-        <div class="polje polje-obavezno">
-          <label for="datum">Datum:</label>
-          <input type="date" name="datum" id="datum" required /> <br />
-        </div>
+            <div class="polje polje-obavezno">
+              <label for="datum">Datum:</label>
+              <input type="date" name="datum" id="datum" required /> <br />
+            </div>
 
-        <div class="polje polje-obavezno">
-          <span>Izaberi način plaćanja:</span>
-          <select name="placanje" id="placanje">
-            <option value="kes" selected>Kes</option>
-            <optgroup label="Kartica">
-              <option value="visa">Visa</option>
-              <option value="master">Master</option>
-            </optgroup>
-          </select>
-        </div>
+            <div class="polje polje-obavezno">
+              <span>Izaberi način plaćanja:</span>
+              <select name="placanje" id="placanje">
+                <option value="kes" selected>Kes</option>
+                <optgroup label="Kartica">
+                  <option value="visa">Visa</option>
+                  <option value="master">Master</option>
+                </optgroup>
+              </select>
+            </div>
+          </div>
 
-        <div class="polje">
-          <p>Komentar:</p>
-          <textarea
-            name="komentar"
-            id="komentar"
-            cols="35"
-            rows="7"
-            placeholder="Dodaj komentar..."
-          ></textarea>
-        </div>
+          <div class="polje">
+            <p>Komentar:</p>
+            <textarea
+              name="komentar"
+              id="komentar"
+              cols="35"
+              rows="7"
+              placeholder="Dodaj komentar..."
+            ></textarea>
+          </div>
 
-        <button type="submit" class="dugme" id="rezervisi">Rezerviši</button>
-        <button type="reset" class="dugme" id="resetuj">Resetuj</button>
-      </form>
+          <button type="submit" class="dugme" id="rezervisi">Rezerviši</button>
+          <button type="reset" class="dugme" id="resetuj">Resetuj</button>
+        </form>
+      </div>
     </main>
 
     <footer class="footer">

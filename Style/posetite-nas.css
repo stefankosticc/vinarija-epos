@@ -1,53 +1,70 @@
 @import url("../../boje.css");
 
+* {
+  padding: 0;
+}
+
 .header {
   position: static;
 }
+
 .posetite-nas {
   padding-top: 5%;
   background-color: var(--zuta);
-  padding-bottom: 5%;
+  padding-bottom: 5rem;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
 }
+
 .slika {
   width: 60%;
   height: 1%;
   margin-left: 20%;
 }
-.rezervacija {
-  background-color: var(--svetlo-zelena);
-  border: 3px solid var(--svetlo-crvena);
-  border-radius: 20px;
-  padding: 20px;
-  width: 30%;
-  margin-left: 35%;
-}
-.polje {
-  margin: 15px;
+
+.rezervacija-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
 }
 
-.polje label {
-  display: block;
+.rezervacija {
+  background-color: var(--zelena);
+  border: 3px solid var(--bela);
+  border-radius: 20px;
+  padding: 2rem;
+  width: 30%;
+  color: var(--bela);
+}
+
+.rezervacija div {
+  margin-bottom: 0.7rem;
 }
 
 .polje input {
-  display: block;
   width: 100%;
 }
 
-.polje p {
-  display: block;
-}
-.polje textarea {
-  display: block;
-}
-
 .polje input:focus {
-  background-color: var(--crvena);
+  background-color: var(--svetlo-plava);
 }
 
 .polje-obavezno label::after {
   content: "*";
-  color: var(--svetlo-crvena);
+  color: var(--crvena);
+}
+
+.forma-red {
+  display: flex;
+  justify-content: space-between;
+}
+
+.forma-red input {
+  width: 80%;
+}
+
+.polje textarea {
+  resize: none;
 }
 
 .dugme:hover {
