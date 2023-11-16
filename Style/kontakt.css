@@ -14,11 +14,19 @@ body {
   justify-content: space-evenly;
   align-items: center;
   background-color: var(--zelena);
-  color: var(--bela);
   width: 100%;
   top: 0;
   position: sticky;
   height: 10vw;
+}
+
+.header a {
+  text-decoration: none;
+  color: var(--bela);
+}
+
+.header a:hover {
+  color: var(--zelena);
 }
 
 #logoSlova {
@@ -40,5 +48,11 @@ body {
 }
 
 .informacije-container {
-  background-color: aqua;
+  background-color: var(--zelena);
+  width: 84%;
+  color: var(--bela);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  margin-top: 2rem;
 }
