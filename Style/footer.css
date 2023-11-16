@@ -14,6 +14,7 @@
   height: 12vw;
   width: 12vw;
 }
+
 #naziv {
   margin-bottom: 1rem;
 }
@@ -21,12 +22,31 @@
 #adresa {
   margin-bottom: 1rem;
 }
+
 #telefon {
   margin-bottom: 1rem;
 }
+
 #email {
   margin-bottom: 1rem;
 }
+
 #pratiteNas {
   margin-bottom: 1rem;
+}
+
+.fa-facebook {
+  cursor: pointer;
+}
+
+.fa-facebook:hover {
+  color: #1877f2;
+}
+
+.fa-instagram {
+  cursor: pointer;
+}
+
+.fa-instagram:hover {
+  background-image: linear-gradient(#8a3ab9, #bc2a8d);
 }
