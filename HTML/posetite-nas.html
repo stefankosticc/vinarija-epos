@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../Style/posetite-nas.css" />
     <link rel="stylesheet" href="../Style/header.css" />
     <link rel="stylesheet" href="../Style/footer.css" />
+    <link rel="stylesheet" href="../Style/burger-meni.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -40,9 +41,14 @@
       <a href="./kontakt.html">
         <h2 id="kontakt">Kontakt</h2>
       </a>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
-    <main class="posetite-nas main">
+    <main class="posetite-nas">
       <p>
         Kapije Vinarije Joksimović širom su otvorene za sve posetioce i
         ljubitelje koji žele da dožive čari nastanka vina i u prelepom ambijentu
@@ -53,8 +59,8 @@
       <br />
       <ol class="paketi">
         <li>
-          <h3>Obilazak STANDARD</h3>
-          <p>
+          <h3 class="naziv-paketa">Obilazak STANDARD</h3>
+          <p class="opis-paketa">
             <i
               >Pršuta od mangulice, slanina od mangulice, pečenica od mangulice,
               polutvrdi zreli koziji sir, pašteta od čvaraka, sir Grana Padano,
@@ -111,7 +117,7 @@
       </ol>
 
       <div class="rezervacija-container">
-        <form action="" class="rezervacija">
+        <form class="rezervacija" id="forma">
           <div id="izbor-paketa">
             <label for="paket">Izaberite željeni paket:</label><br />
             <input
@@ -143,6 +149,7 @@
               maxlength="30"
               required
             />
+            <label for="imeIPrezime" id="imeGreska" class="greska"></label>
           </div>
 
           <div class="polje polje-obavezno">
@@ -151,19 +158,14 @@
               title="Broj telefona mora biti u formatu 06X-XXXX-XXX!"
               >Broj telefona:</label
             >
-            <input
-              type="tel"
-              id="telefon"
-              name="telefon"
-              size="35"
-              pattern="[0-9]{3}-[0-9]{4}-[0-9]{3}"
-              required
-            />
+            <input type="tel" id="telefon" name="telefon" size="35" required />
+            <label for="telefon" id="telefonGreska" class="greska"></label>
           </div>
 
           <div class="polje ograniceno">
             <label for="email" title="E-mail mora sadržati @!">E-mail:</label>
             <input type="email" id="email" name="email" size="35" /> <br />
+            <label for="email" id="emailGreska" class="greska"></label>
           </div>
 
           <div class="forma-red">
@@ -225,11 +227,13 @@
         <p id="pratiteNas">Pratite nas</p>
         <i class="fab fa-facebook"></i>
         <i class="fab fa-instagram"></i>
-        <i class="fas fa-moon"></i>
       </div>
     </footer>
 
-    <script src="../Script/posetite-nas.js"></script>
-    <script src="../Script/dark.js"></script>
+    <script src="../Script/validacija.js"></script>
+    <script src="../Script/formaFocus.js"></script>
+    <script src="../Script/trenutna-strana.js"></script>
+    <script src="../Script/burger.js"></script>
+    <script src="../Script/bojaDugme.js"></script>
   </body>
 </html>

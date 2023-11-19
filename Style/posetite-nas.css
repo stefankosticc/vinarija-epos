@@ -15,6 +15,10 @@
   padding-right: 2.8rem;
 }
 
+.naziv-paketa {
+  cursor: pointer;
+}
+
 .slika {
   width: 60%;
   margin-left: 20%;
@@ -45,11 +49,11 @@
   width: 100%;
 }
 
-.polje input:focus {
+/* .polje input:focus {
   background-color: var(--svetlo-plava);
-}
+} */
 
-.polje-obavezno label::after {
+.polje-obavezno label:not(.greska):after {
   content: "*";
   color: var(--crvena);
 }
@@ -70,6 +74,10 @@
 .dugme:hover {
   cursor: pointer;
   transform: scale(1.5, 1.5);
+}
+
+.greska {
+  color: red;
 }
 
 @media screen and (max-width: 900px) {

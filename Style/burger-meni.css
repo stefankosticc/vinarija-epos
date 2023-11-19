@@ -1,0 +1,70 @@
+@import url("./boje.css");
+
+.burger {
+  display: none;
+  width: 8vw;
+  height: 8vw;
+  position: relative;
+  cursor: pointer;
+}
+
+.burger span {
+  width: 100%;
+  height: 3px;
+  background-color: var(--zuta);
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.burger span:nth-child(1) {
+  top: 25%;
+}
+
+.burger span:nth-child(3) {
+  top: 75%;
+}
+
+.burger.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.header-active {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+}
+
+.header-active a {
+  display: block;
+}
+
+.header-active img {
+  order: -1;
+}
+
+@media screen and (max-width: 500px) {
+  .burger {
+    display: flex;
+  }
+
+  .header {
+    justify-content: space-around;
+  }
+
+  .header::before {
+    content: "";
+  }
+}

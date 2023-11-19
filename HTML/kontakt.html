@@ -6,6 +6,7 @@
     <title>Kontakt</title>
     <link rel="icon" href="../Slike/logo.png" />
     <link rel="stylesheet" href="../Style/kontakt.css" />
+    <link rel="stylesheet" href="../Style/burger-meni.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -16,6 +17,12 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200&display=swap"
       rel="stylesheet"
     />
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav class="header">
@@ -32,6 +39,11 @@
       <a href="./kontakt.html">
         <h2 id="kontakt">Kontakt</h2>
       </a>
+      <div class="burger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
 
     <main class="main-container">
@@ -64,7 +76,7 @@
       <div class="mapa">
         <p>Nadjite nas na mapi!</p>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2443.389502874849!2d20.544075190155098!3d44.754013851714184!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a654c5ee6c4ef%3A0x18e7ce7c9e273857!2sKralja%20Petra%2019%2C%20Beograd!5e1!3m2!1sen!2srs!4v1700148793857!5m2!1sen!2srs"
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2052.6251541034753!2d20.745680529840477!3d44.65889503583956!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2srs!4v1700353758038!5m2!1sen!2srs"
           width="600"
           height="450"
           allowfullscreen=""
@@ -73,5 +85,7 @@
         ></iframe>
       </div>
     </main>
+    <script src="../Script/trenutna-strana.js"></script>
+    <script src="../Script/burger.js"></script>
   </body>
 </html>
