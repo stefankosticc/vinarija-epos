@@ -47,9 +47,6 @@
   cursor: pointer;
 }
 
-.fa-moon {
-  cursor: pointer;
-}
 
 .fa-instagram:hover {
   background-image: linear-gradient(#8a3ab9, #bc2a8d);
